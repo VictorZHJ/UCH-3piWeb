@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>3PI線迷宮鼠學習平台-UCH 3PI LineMaze</title>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/ideal-image-slider.css">
+  <link rel="stylesheet" href="css/default.css">
+  <script src="js/script.js" type="text/javascript"></script>
+  <script src="js/w3data.js" type="text/javascript"></script>
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body onload="index()">
+  <div w3-include-html="navbar.html"></div>
+  <!--導覽列-->
+  <!--大標題-->
+  <div class="jumbotron">
+    <div class="col-xs-12">
+      <p class="text-center"><img src="images/logo.png"></img></p>
+    </div>
+    <h3 class="text-center" id="i1">3PI機器人快速上手</h3>
+    <p class="text-center" id="i2">透過簡單的教材，創造最大的能力。</p>
+    <p class="text-center text-uppercase"><a class="btn btn-success btn-lg" href="https://dreamweaver-3pi-victorzhj.c9users.io/about/3pi-1.html" role="button">教學開始</a></p>
+    <h5 class="text-center" id="msg2"></h5>
+    <div class="install">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div id="slider">
+            <img src="images/001.jpg" title="3pi Robot" alt="擴充性高" />
+            <img data-src="images/002.jpg" title="擴充範例" alt="組合多晶片達成LED顯示" />
+            <img src="images/0001.png" title="基礎教材" alt="凡事皆從基礎學起" />
+            <img src="images/0002.png" title="圖示教學" alt="簡單明瞭的範例" />
+            <img src="images/0003.png" title="進階思考" alt="藉由改變想法，來解出複雜的路線" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="col-md-12">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="row">
+              <div class="thumbnail">
+                <img alt="Thumbnail Image 1" src="images/0J1177.1200.jpg" width="90%">
+                <div class="caption">
+                  <h3 class="text-center">避障自走車</h3>
+                  <p class="text-center">透過超音波來達成繞過物體</p>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="row">
+              <div class="thumbnail">
+                <img alt="Thumbnail Image 1" src="images/17.jpg" width="90%">
+                <div class="caption">
+                  <h3 class="text-center">多重擴充的自走車</h3>
+                  <p class="text-center">保險桿、紅外線目標檢測、電子羅盤、目標探測儀</p>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="row">
+              <div class="thumbnail">
+                <img alt="Thumbnail Image 1" src="images/0J1275.1200.jpg" width="90%">
+                <div class="caption">
+                  <h3 class="text-center">無線遙控車</h3>
+                  <p class="text-center">擴充無線電裝置使其成為一台可控制的遙控車</p>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <p class="text-center">©UCH-3pi機器人教學平台專題小組</p>
+  </div>
+  <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+  <script src="js/bootstrap.js" type="text/javascript"></script>
+  <script src="js/ideal-image-slider.js"></script>
+  <script src="js/iis-captions.js"></script>
+  <script>
+    //---導覽列
+    w3IncludeHTML();
+    //---圖片輪播
+    var slider = new IdealImageSlider.Slider({
+      selector: '#slider',
+      height: '16:9', //'auto','800','16:9'
+      interval: 4000,
+      effect: 'slide', //fade or slide
+      transitionDuration: 500
+    });
+    slider.addCaptions();
+    slider.start();
+  </script>
+</body>
+
+</html>

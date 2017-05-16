@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>3PI線迷宮鼠學習平台-UCH 3PI LineMaze</title>
+  <link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="../css/normalize.css" rel="stylesheet">
+  <link href="../css/ideal-image-slider.css" rel="stylesheet">
+  <link href="../css/default.css" rel="stylesheet">
+  <style media="screen">
+    #slider {
+      max-width: 100%;
+      margin: 10px auto;
+      box-shadow: 4px 4px 16px black;
+    }
+  </style>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="../js/w3data.js" type="text/javascript"></script>
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body onload="navbarlevel2()">
+  <div w3-include-html="../navbar.html"></div>
+  <!--導覽列-->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10  col-xs-12 col-md-offset-1">
+        <h2>3PI-線迷宮介紹</h2>
+        <div id="slider">
+          <img src="images/linemaze/001.png" title="基礎解說" alt="在程式判斷中，所有最容易遇到的狀況。" />
+          <img src="images/linemaze/002.png" alt="路況圖示" />
+          <img src="images/linemaze/003.png" alt="路況圖示" />
+          <img src="images/linemaze/004.png" alt="由紅外線感應器判斷道路狀況" />
+          <img src="images/linemaze/005.png" alt="直行" />
+          <img src="images/linemaze/006.png" alt="發現岔路" />
+          <img src="images/linemaze/007.png" title="優先法則" alt="若設定右彎法則，則優先右轉。" />
+          <img src="images/linemaze/008.png" title="右彎法則" alt="發現路口，但只發現左叉路，持續直行。" />
+          <img src="images/linemaze/009.png" title="優先法則" alt="若設定右彎法則，則優先右轉。" />
+          <img src="images/linemaze/010.png" title="終點判斷" alt="感應器皆感應到值，且持續一段時間，則判定為終點。" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="container">
+    <div class="row">
+      <p class="text-center text-uppercase"><a class="btn btn-success btn-lg" href="https://dreamweaver-3pi-victorzhj.c9users.io/level2/simplify.html" role="button">下個章節（迷宮路徑化簡)</a></p>
+      <br>
+    </div>
+  </div>
+  <script src="../js/jquery-1.11.3.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.js" type="text/javascript"></script>
+  <script src="../js/ideal-image-slider.js"></script>
+  <script src="../js/iis-captions.js"></script>
+  <script>
+    //---導覽列
+    w3IncludeHTML();
+    //---圖片輪播
+    var slider = new IdealImageSlider.Slider({
+      selector: '#slider',
+      height: 'auto',
+      interval: 4000,
+      effect: 'fade', //fade or slide
+      transitionDuration: 500
+    });
+    slider.addCaptions();
+    slider.start();
+  </script>
+</body>
+
+</html>

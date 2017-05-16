@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>3PI線迷宮鼠學習平台-UCH 3PI LineMaze</title>
+  <link href="https://dreamweaver-3pi-victorzhj.c9users.io/css/bootstrap.css" rel="stylesheet" type="text/css">
+  <script src="https://dreamweaver-3pi-victorzhj.c9users.io/js/script.js" type="text/javascript"></script>
+  <script src="https://dreamweaver-3pi-victorzhj.c9users.io/js/w3data.js" type="text/javascript"></script>
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body onload="navbarapp()">
+  <div w3-include-html="https://dreamweaver-3pi-victorzhj.c9users.io/navbar.html"></div>
+  <!--導覽列-->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10  col-xs-12 col-md-offset-1">
+        <div class="thumbnail">
+          <div class="caption" style="line-height:32px;">
+            <h3>步進馬達</h3>
+            <p>步進馬達(Stepping motor)在於機器人的控制中步進馬達也扮演著不容忽視的腳色，如自走車上倘若缺少了步進馬達，則自走車將無法自由的移動位子。所以要使步進馬達轉動必須要加裝一個驅動電路，且驅動馬達必須輸入一個方波信號，若在步進馬達無方波輸入的時候，則內部的轉子會維持在一定的位置；若加入適當的方波信號想要使步進馬達開始轉動時， 則內部的轉子就要以一定的角度轉動這個角度又稱為「步角」。</p>
+            <br>
+            <p>至於馬達的速度控制則是利用 PWM（脈波寬度調變控制），可以藉由改變 (責任週期) 的寬度來改變波型高態的時間；且馬達的轉速與電壓的大小成正比，若將其電壓大小改變馬達的轉速也會跟著改變。 PWM 在自走車的應用方面上，可使自走車在行走直線時將其 PWM 值加大使其馬達轉速增加至理想的狀態，但如果在轉彎時不建議將其 PWM 值維持在太高的狀態下，因為如果沒有控制好的話自走車在轉彎時的速度可能會導致自走車在轉彎時來不及將前進路線調回到正確的軌道而衝出軌道。
+            </p>
+            <div class="row">
+              <div class="col-md-6  col-md-offset-3">
+                <img class="img-rounded" src="images/motor/m1.jpg" width="100%">
+              </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="row">
+              <div class="col-md-8  col-md-offset-2">
+                <img class="img-rounded" src="images/motor/m2.jpg" width="100%">
+              </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="col-md-8  col-md-offset-2">
+              <img class="img-rounded" src="images/motor/motorlist.png" width="100%">
+              <p>馬達尺寸表(上圖)</p>
+              <p>原廠預設使用齒輪比為30:1的馬達(如圖綠框)，但為了追求速度與效能，我們在自己的機器人上改用了齒輪比為10:1的馬達；以同樣一段100m直線為基準，在極速下10:1馬達的速度快於30:1馬達的3倍之多。</p>
+            </div>
+            <p class="text-center text-uppercase"><a class="btn btn-success btn-lg" href="https://dreamweaver-3pi-victorzhj.c9users.io/level1/install.html" role="button">下個章節（建立安裝環境）</a></p>
+            <br>
+            <br>
+            <br>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://dreamweaver-3pi-victorzhj.c9users.io/js/jquery-1.11.3.min.js" type="text/javascript"></script>
+  <script src="https://dreamweaver-3pi-victorzhj.c9users.io/js/bootstrap.js" type="text/javascript"></script>
+  <script>
+    w3IncludeHTML();
+  </script>
+</body>
+
+</html>

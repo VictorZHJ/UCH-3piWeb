@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>3PI線迷宮鼠學習平台-UCH 3PI LineMaze</title>
+  <link href="https://dreamweaver-3pi-victorzhj.c9users.io/css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="https://dreamweaver-3pi-victorzhj.c9users.io/css/normalize.css" rel="stylesheet">
+  <link href="https://dreamweaver-3pi-victorzhj.c9users.io/css/ideal-image-slider.css" rel="stylesheet">
+  <link href="https://dreamweaver-3pi-victorzhj.c9users.io/css/default.css" rel="stylesheet">
+  <style media="screen">
+    #slider {
+      max-width: 100%;
+      margin: 10px auto;
+      box-shadow: 4px 4px 16px black;
+    }
+  </style>
+  <script src="https://dreamweaver-3pi-victorzhj.c9users.io/js/script.js" type="text/javascript"></script>
+  <script src="https://dreamweaver-3pi-victorzhj.c9users.io/js/w3data.js" type="text/javascript"></script>
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body onload="navbarlevel2()">
+  <div w3-include-html="https://dreamweaver-3pi-victorzhj.c9users.io/navbar.html"></div>
+  <!--導覽列-->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10  col-xs-12 col-md-offset-1">
+        <h2>迷宮解法-路徑化簡</h2>
+        <div id="slider">
+          <img src="images/simplify/simply.001.jpeg" title="路徑簡化" alt="快速了解運作原理" />
+          <img data-src="images/simplify/simply.002.jpeg" src="" alt="發現路口，右轉"/>
+          <img data-src="images/simplify/simply.003.jpeg" src="" alt="死路，迴轉"/>
+          <img data-src="images/simplify/simply.004.jpeg" src="" alt="發現路口，右轉"/>
+          <img data-src="images/simplify/simply.005.jpeg" src="" title="化簡" alt="縮簡為一直線"/>
+          <img data-src="images/simplify/simply.006.jpeg" src="" title="化簡" alt="縮簡為一直線"/>
+          <img data-src="images/simplify/simply.007.jpeg" src="" title="左彎優先" alt="左轉"/>
+          <img data-src="images/simplify/simply.008.jpeg" src="" alt="發現一路口，但左彎優先，忽略；下一路口右轉"/>
+          <img data-src="images/simplify/simply.009.jpeg" src="" alt="死路，迴轉"/>
+          <img data-src="images/simplify/simply.010.jpeg" src="" alt="左轉"/>
+          <img data-src="images/simplify/simply.011.jpeg" src="" title="化簡" alt="縮簡為右轉"/>
+          <img data-src="images/simplify/simply.012.jpeg" src="" alt="死路，迴轉"/>
+          <img data-src="images/simplify/simply.013.jpeg" src="" alt="左轉"/>
+          <img data-src="images/simplify/simply.014.jpeg" src="" title="化簡" alt="縮簡為右轉"/>
+          <img data-src="images/simplify/simply.015.jpeg" src="" alt="左轉"/>
+          <img data-src="images/simplify/simply.016.jpeg" src="" title="化簡" alt="縮簡為直行"/>
+          <img data-src="images/simplify/simply.017.jpeg" src="" alt="死路，迴轉"/>
+          <img data-src="images/simplify/simply.018.jpeg" src="" alt="左轉"/>
+          <img data-src="images/simplify/simply.019.jpeg" src="" title="化簡" alt="縮簡為右轉，發現終點"/>
+          <img data-src="images/simplify/simply.020.jpeg" src="" title="化簡結果" alt="右轉即可到達終點"/>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <p class="text-center text-uppercase"><a class="btn btn-success btn-lg" href="https://dreamweaver-3pi-victorzhj.c9users.io/level2/code.html" role="button">下個章節（程式介紹）</a></p>
+    </div>
+  </div>
+  <script src="https://dreamweaver-3pi-victorzhj.c9users.io/js/jquery-1.11.3.min.js" type="text/javascript"></script>
+  <script src="https://dreamweaver-3pi-victorzhj.c9users.io/js/bootstrap.js" type="text/javascript"></script>
+  <script src="https://dreamweaver-3pi-victorzhj.c9users.io/js/ideal-image-slider.js"></script>
+  <script src="https://dreamweaver-3pi-victorzhj.c9users.io/js/iis-captions.js"></script>
+  <script>
+    //---導覽列
+    w3IncludeHTML();
+    //---圖片輪播
+    var slider = new IdealImageSlider.Slider({
+      selector: '#slider',
+      height: 'auto',
+      interval: 4000,
+      effect: 'fade', //fade or slide
+      transitionDuration: 500
+    });
+    slider.addCaptions();
+    slider.start();
+  </script>
+</body>
+
+</html>
